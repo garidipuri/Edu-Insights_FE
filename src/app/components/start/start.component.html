@@ -1,0 +1,31 @@
+<body>
+    <div class="container">
+    <mat-progress-bar *ngIf="isLoading" mode="indeterminate"></mat-progress-bar>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+        <p>Enter the below details to start the Exam</p>
+​       <div style="display: inline-block;">
+    
+            <mat-form-field appearance="outline" style="width: 100%;" >
+                <mat-label>First Name</mat-label>
+                <input  matInput placeholder="Email or Phone" formControlName="firstName" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="width: 100%;" >
+                <mat-label>Last Name</mat-label>
+                <input  matInput placeholder="Email or Phone" formControlName="lastName" >
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" style="width: 100%;" >
+                <mat-label>Email or Phone</mat-label>
+                <input  matInput placeholder="Email or Phone" formControlName="email" >
+            </mat-form-field>
+
+            <div class="row" style="display: inline;align-items: center;">
+            
+                <button type="submit" [disabled]="!profileForm.valid"  mat-raised-button color="primary" >START EXAM</button>
+            
+            </div>
+      </div>
+    </form>
+    </div>
+</body>

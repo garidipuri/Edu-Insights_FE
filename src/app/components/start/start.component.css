@@ -1,0 +1,22 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+​
+.container {
+    max-width: 430px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+form{
+    padding: 30px;
+    box-shadow: 2px 2px 2px 2px rgb(225, 227, 230);
+    border-radius: 8px;
+}
